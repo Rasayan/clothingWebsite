@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Inika&family=Inria+Serif&family=Inter&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+::placeholder{
+    color: #000;
+    padding-left: 9px;
+}
+
+.nav {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: none;
+    background: #a2d2ff;
+    color: #fff;
+}
+
+.headOptions{
+    margin-left: 20px;
+}
+.headList {
+    display: flex;
+    gap: 4.2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.headOptions li a {
+    color: #03045e;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 2px;
+    transition: 90ms;
+}
+
+.headOptions li a:hover {
+    font-size: 1.1em;
+}
+
+.headList li:last-child {
+    padding: 10px 22px;
+    font-weight: 700;
+    border: 2px #fff solid;
+    border-radius: 50px;
+}
+
+h1 {
+    font-family: 'Hurricane', cursive;
+    font-size: 2.1em;
+}
+
+.front {
+    background-color: #a2d2ff;
+    padding: 8% 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.front .frontButtons {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.front .frontIcons {
+    display: inline-flex;
+    padding: 23px 0;
+    gap: 2em;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.front .frontIcons a {
+    color: #03045e;
+    transition: 100ms;
+}
+
+.front .frontIcons a:hover {
+    font-size: 1.3em;
+}
+
+.headLogo {
+    font-family: 'Inter', sans-serif;
+    font-size: 4em;
+    margin: 0;
+    color: #5e548e;
+    font-weight: 700;
+}
+
+.midLogo {
+    font-family: 'Inika', serif;
+    font-size: 1.7em;
+    color: #231942;
+}
+
+.tagline {
+    font-family: 'Inria Serif', serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    color: #1d3557;
+}
+
+.frontButtons button {
+    margin: 10px 0;
+    padding: 12px 29px;
+    background: #fff;
+    transition: all 100ms;
+}
+
+.frontButtons button a {
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.frontFirstButton button {
+    border: 2px black solid;
+    border-radius: 10px 0 10px 0;
+}
+
+.frontSecondButton button {
+    border: 2px black solid;
+    border-radius: 0 10px 0 10px;
+}
+
+.frontButtons button:hover {
+    margin: 6px 0;
+    padding: 16px 33px;
+}
+
+.categories {
+    padding: 4em 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background: #faedcd;
+}
+
+.categories h2 {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 3px;
+    word-spacing: 7px;
+    color: #001219;
+}
+
+.explore {
+    padding: 4em 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.men {
+    border: 7px #e9c46a solid;
+    border-radius: 20px;
+    width: 27em;
+    height: 43em;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .cardImage {
+    width: 100%;
+    height: 43em;
+    object-fit: cover;
+    border-radius: 15px;
+} */
+
+.women {
+    border: 7px #e9c46a solid;
+    border-radius: 20px;
+    width: 27em;
+    height: 43em;
+    position: relative;
+    overflow: hidden;
+}
+
+.men:hover .cardBody {
+    right: 0;
+}
+
+.women:hover .cardBody {
+    right: 0;
+}
+
+.cardImage {
+    width: 100%;
+    height: 43em;
+    object-fit: cover;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.cardBody {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #00000038;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: right 1s;
+}
+
+.cardHeading {
+    font-family: 'Hurricane', cursive;
+    padding: 50px 150px 0 160px;
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.cardList {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 2px 150px;
+    text-align: center;
+    line-height: 2;
+}
+
+.cardButton {
+    width: 7em;
+    height: 3em;
+    margin: 2px 169px;
+    border-radius: 30px;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    background: #f6bd60;
+    border: none;
+}
+
+.communitySection {
+    padding: 8% 10% 10% 11%;
+    text-align: center;
+    background: #a2d2ff;
+}
+
+.joinUs h3 {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    font-size: 1.4em;
+    color: #231942;
+}
+
+.joinUs p {
+    padding: 2% 30%;
+    line-height: 1.5;
+    font-size: 1.1em;
+    color: #231942;
+}
+
+.communityButtons button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.communityButtons button a {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.communityButtons button:first-child {
+    background: violet;
+}
+
+.communityButtons button:last-child {
+    background: cyan;
+}
+
+.clothingAdd {
+    margin: 40px;
+    position: relative;
+}
+
+.clothingImage {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.clothingBody {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: #00000048;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.clothingBody h3 {
+    padding: 10px 50px;
+    font-family: 'Inter', sans-serif;
+    word-spacing: 4px;
+    letter-spacing: 4px;
+    font-size: 2em;
+    color: #fff;
+}
+
+.clothButtons {
+    margin: 10px 50px;
+}
+
+.clothButtons button:first-child {
+     padding: 10px 20px;
+     border-radius: 50px;
+     background: #001219;
+}
+
+.clothButtons button:last-child {
+    padding: 10px 29px;
+    border-radius: 50px;
+}
+
+.clothButtons button:first-child a {
+    color: #f1faee;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+.clothButtons button:last-child a {
+    color: #000;
+    font-weight: 700;
+    margin-left: 10px;
+    letter-spacing: 0.7px;
+    font-size: 1.2em;
+}
+
+.clothButtons button:last-child {
+    background: #f1faee;
+}
+
+.upperFooter {
+    background: rgb(214, 213, 213);
+    margin: 40px;
+    padding: 28px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoFoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoFoot ion-icon {
+    font-size: 1.9em;
+}
+
+.logoFoot h5 {
+    font-size: 1em;
+}
+
+.inputBrand input {
+    height: 20px;
+    border: 1px rgb(34, 34, 34) solid;
+    border-radius: 7px;
+}
+
+::placeholder{
+    color: #000;
+}
+
+.footer {
+    margin: 40px;
+    padding: 9px;
+    display: flex;
+    justify-content: space-around;
+    align-items: first baseline;
+}
+
+.footerHead {
+    margin-left: 41px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+}
+
+.downloadApp .footerHead {
+    margin-left: 1px;
+}
+
+.firstCitizen .footerHead {
+    margin-left: 1px;
+}
+
+.footerList {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9em;
+}
+
+.footerList li {
+    line-height: 2;
+}
+
+.footerButton {
+    padding: 10px 19px;
+    border-radius: 10px;
+    background: #000;
+}
+
+.footerButt {
+    color: aliceblue;
+    font-family: 'Inter', sans-serif;
+}
+.firstCitizen p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9em;
+    line-height: 2;
+}
